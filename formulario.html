@@ -3,51 +3,81 @@
     <head>
  	<meta name="description" content="Ejemplo de HTML5" />
  	<meta name="keywords" content="HTML5,CSS3,JavaScript" />
- 	<title>Formulario</title>
+ 	<title>Formulario HTML</title>
     </head>
     <body>
  	<div>
 	 <form action="datos.html" method="GET">
  	   <fieldset>
- 	 	<legend>Formulario</legend>
+ 	 	<legend>Personal</legend>
  		<br/>
  		<br/>
- 		<label for="txtContra">Password</label><br/>
- 		<input type="password" size="10" maxlength="10" id="txtContra" name="contra" value="" />
+ 		<label for="txtNombre">Nombre</label><br/>
+ 		<input type="text" size="20" maxlength="20" id="txtNombre" name="nomb" value="" />
+ 		<br/>
+ 		<label for="txtApat">Apellido Paterno</label><br/>
+ 		<input type="text" size="20" maxlength="20" id="txtApat" name="apat" value="" />
+ 		<br/>
+ 		<label for="txtAmat">Apellido Materno</label><br/>
+ 		<input type="text" size="20" maxlength="20" id="txtAmat" name="amat" value="" />
  		<br/>
  		<br/>
  	   </fieldset>
+ 	   
+ 	   <fieldset>
+		  <legend>Contacto</legend>
+		  <br/>
+ 		  <br/>
+ 		  <label for="txtDom">Domicilio</label><br/>
+ 		  <input type="text" size="35" maxlength="35" id="txtDom" name="dom" value="" />
+ 		  <br/>
+ 		  <label for="txtCol">Colonia</label><br/>
+ 		  <input type="text" size="20" maxlength="20" id="txtCol" name="col" value="" />
+ 		  <br/>
+ 		  <label for="txtCodP">C&oacute;digo Postal</label><br/>
+ 		  <input type="text" size="10" maxlength="10" id="txtCodP" name="CodP" value="" />
+ 		  <br/>
+ 		  <label for="estados">Estado</label><br/>
+ 		  <select id="estados" name="estados">
+		    <option value="0" selected="selected"></option>
+		    <option value="1">Azul</option>
+		    <option value="2">Rojo</option>
+		    <option value="3">Negro</option>
+		    <option value="4">Blanco</option>
+ 		  </select>
+ 		  <br/>
+ 		  <br/>
+ 	   </fieldset>
 
  	   <fieldset>
- 		<legend>Cajas de selecci&oacute;n</legend>
- 		<input type="radio" id="pro1" name="programacion" value="1">
- 		<label for="pro1">Programaci&oacute;n 1</label><br/>
- 		<input type="radio" id="pro2" name="programacion" value="2" checked="checked">
- 		<label for="pro2">Programaci&oacute;n 2</label><br/>
- 		<input type="radio" id="pro3" name="programacion" value="3">
- 		<label for="pro3">Programaci&oacute;n 3</label><br/>
+ 		<legend>Otros</legend>
  		<br/>
  		<br/>
- 		<input type="checkbox" id="pro11" name="programacion1" value="1">
- 		<label for="pro11">Programaci&oacute;n 1</label><br/>
- 		<input type="checkbox" id="pro22" name="programacion2" value="2" checked="checked">
- 		<label for="pro22">Programaci&oacute;n 2</label><br/>
- 		<input type="checkbox" id="pro33" name="programacion3" value="3">
- 		<label for="pro33">Programaci&oacute;n 3</label><br/>
-
-		 <br/>
-		 <br/>
- 		<select id="colores" name="colores">
- 		   <option value="-1"></option>
- 		   <option value="1">Azul</option>
- 		   <option value="2">Rojo</option>
- 		   <option value="3" selected="selected">Negro</option>
- 		   <option value="4">Blanco</option>
- 		</select>
+ 		<label>Sexo</label>
+ 		<br/>
+ 		<input type="radio" id="smasc" name="sexo" value="1">
+ 		<label for="smasc">Masculino</label><br/>
+ 		<input type="radio" id="sfem" name="sexo" value="2">
+ 		<label for="sfem">Femenino</label><br/>
+ 		<br/>
+ 		<br/>
+ 		<label>Idiomas</label>
+ 		<br/>
+ 		<input type="checkbox" id="ing" name="ingles" value="1">
+ 		<label for="ing">Ingl&eacute;s</label><br/>
+ 		<input type="checkbox" id="esp" name="espanol" value="2" checked="checked">
+ 		<label for="esp">Espa&ntilde;ol</label><br/>
+ 		<input type="checkbox" id="alem" name="aleman" value="3">
+ 		<label for="alem">Alem&aacute;n</label><br/>
+ 		<input type="checkbox" id="fra" name="frances" value="3">
+ 		<label for="fra">Franc&eacute;s</label><br/>
+ 		<br/>
  		<input type="hidden" name="oculto" value="10">
+ 		<br/>
+ 		<br/>
  	  </fieldset>
 
-	  <input type="submit" name="enviar" value="Guardar" />
+	  <input type="submit" name="enviar" value="Enviar" />
       </form>
      </div>
    </body>
